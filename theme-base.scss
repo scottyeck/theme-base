@@ -1,5 +1,9 @@
 $background                   : white !default;
 
+$font_family                  : "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !default;
+$font_size                    : 1em !default;
+$line_height                  : 1.1em !default;
+
 $line_alt1_background         : $background !default;
 $line_alt2_background         : $background !default;
 
@@ -65,7 +69,7 @@ $caption_color                : $code_plain !default;
     float: none !important;
     height: auto !important;
     left: auto !important;
-    line-height: 1.1em !important;
+    line-height: $line_height !important;
     margin: 0 !important;
     outline: 0 !important;
     overflow: visible !important;
@@ -78,10 +82,10 @@ $caption_color                : $code_plain !default;
     width: auto !important;
     box-sizing: content-box !important;
     font: {
-      family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+      family: $font_family !important;
       weight: normal !important;
       style: normal !important;
-      size: 1em !important;
+      size: $font_size !important;
     }
     min: {
       // For IE8, FF & WebKit
